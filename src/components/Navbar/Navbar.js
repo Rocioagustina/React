@@ -1,25 +1,27 @@
-import React, { Component } from 'react';
-import { MenuItems } from "./MenuItems"
-import'./Navbar.css'
-import "bootstrap/dist/css/bootstrap.min.css"
-
-let Navbar = () => {
-    <Navbar bg="light" expand="lg">
-    <Navbar.Brand href="#home">The house of books</Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="mr-auto">
-        <Nav.Link href="#">Inicio</Nav.Link>
-        <Nav.Link href="#">Productos</Nav.Link>
-        <Nav.Link href="#">Contacto</Nav.Link>       
-      </Nav>
-      <Form inline>
-        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-        <Button variant="outline-success">Search</Button>
-      </Form>
-    </Navbar.Collapse>
-  </Navbar>
-}
+import React from 'react';
+import CartWidget from '../CartWidget/CartWidget'
+import './style.css'
 
 
-export default Navbar 
+
+
+ let Navbar = () => {
+    return (
+      <header>
+        <nav>
+          <h1>
+            House of books
+          </h1>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+          <CartWidget />
+        </nav>    
+      </header>             
+      );
+  }
+
+  export default Navbar;
+

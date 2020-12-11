@@ -1,0 +1,47 @@
+h1 {
+    color: teal;
+    position: relative;
+    right: 500px;
+}
+
+header {
+    background-color: powderblue;
+    margin: -25px;
+    padding: 10px;
+   
+}
+
+img {
+    position: relative;
+    left: 225px;
+    bottom: 87px;
+}
+
+
+ul {
+    list-style: none;
+    text-align: center;
+    position: relative;
+    left: 400px;
+    bottom: 45px;
+}
+
+li {
+    display: inline;
+   text-align: center;
+   margin: 0 10px 0 0;
+}
+
+li a {
+    text-decoration: none;    
+    padding: 2px 7px 2px 7px;
+    color: #666;
+    background-color: #eeeeee;
+    border: 1px solid #ccc;
+        
+}
+
+li a:hover{
+    background-color: teal;
+    color: #ffffff;
+ }

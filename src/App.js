@@ -1,16 +1,18 @@
-import React from 'react';
+import React  from 'react';
+import Navbar from './components/Navbar/Navbar'
 import './App.css';
-import Navbar from "./components/Navbar/Navbar"
-import "bootstrap/dist/css/bootstrap.min.css"
-import { MenuItems } from './components/Navbar/MenuItems';
+import ItemListContainer from './components/ItemList/ItemListContainer'
+
+
 
 let App = () => {
   return (
-    <>
-    <Navbar/>
-    <MenuItems/>
-    </>
+   <div className="App">
+     <Navbar />  
+     <ItemListContainer nombre="Usuario"/>      
+   </div>
   );
 }
 
 export default App;
+
