@@ -1,0 +1,13 @@
+button {
+    background-color: transparent;
+    margin: 15px;
+    border: 2px solid #42a2c2;
+    border-radius: 6px;
+    width: 40px;
+    height: 25px;
+}
+
+h2 {
+    color: teal;
+}
+

@@ -1,6 +1,9 @@
 import React from 'react';
-import CartWidget from '../CartWidget/CartWidget'
-import './style.css'
+import CartWidget from '../CartWidget/CartWidget.js'
+import ItemListContainer from '../ItemList/ItemListContainer.js'
+import ItemCount from '../ItemCount/ItemCount.js'
+import './Navbar.css'
+
 
 
 
@@ -18,7 +21,11 @@ import './style.css'
             <li><a href="#">Contacto</a></li>
           </ul>
           <CartWidget />
+          <ItemListContainer nombre="Usuario"/>      
         </nav>    
+        <div>
+          <ItemCount />
+        </div>
       </header>             
       );
   }
