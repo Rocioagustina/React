@@ -1,0 +1,12 @@
+#itemContainer {
+    position: relative;
+    right: 650px;
+}
+
+
+#portadas {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 250px;
+}

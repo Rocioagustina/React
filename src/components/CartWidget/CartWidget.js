@@ -1,9 +1,9 @@
 import React from 'react'
-import './icono.png'
+import './CartWidget.css'
 
 function CartWidget() {
     return (
-        <img src="./icono.png" alt="carrito"/>
+        <img src="img/icono.png" alt="carrito"/>
     );
 
 }
