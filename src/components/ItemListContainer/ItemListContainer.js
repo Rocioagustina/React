@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import products from '../Item/products.js';
+import Item from '../Item/Item.js';
 import ItemList from '../ItemList/ItemList.js';
-import '../Item/products.js'
 
 
 
 const getProducts = new Promise(function (resolve) {
         setTimeout(() => {
-            resolve(products);
+            resolve(Item);
         }, 2);
     });
 
@@ -26,7 +25,7 @@ const ItemListContainer = () => {
                 itemData ? 
                 <div>
                     <ul>
-                        {itemData.map((product) => {
+                    {itemData.map((product) => {
                         return (
                             <ItemList 
                             key={product.id}

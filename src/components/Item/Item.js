@@ -1,19 +1,30 @@
-import React from 'react';
-import "./Item.css";
-import ItemCount from '../ItemCount/ItemCount.js';
 
-const Item = (props) => {
-    return (
-        <div id="itemContainer">
-            <img id="portadas" src={"img/productos/" + props.photo} alt={props.alt}/>
-            <h5>{props.title}</h5>
-            <ul>
-                <li>Descripción: {props.description}</li>
-                <li>Precio: {props.price}</li>
-            </ul>
-            <ItemCount initial={0} stock={5}/>
-        </div>
-    )
-};
+let products = [
+    {
+        id: '1',
+        title: 'El principito',
+        description: 'Libro 1',
+        price: 100,
+        pictureUrl: './img/productos/portada1.jpg',
+        alt: 'Libro'
+        
+    },
+    {
+        id: '2',
+        title: 'A dos metros de ti',
+        description: 'Libro 2',
+        price: 150,
+        pictureUrl: './img/productos/portada2.jpg',
+        alt: 'Libro'
+    },
+    {
+        id: '3',
+        title: 'Bajo la misma estrella',
+        description: 'Libro 3',
+        price: 200,
+        pictureUrl: './img/productos/portada3.jpg',
+        alt: 'Libro'
+    }
+];
 
-export default Item;
+export default products;
