@@ -1,41 +1,47 @@
-import React from "react";
-import './ItemCount.css'
+import React,{useState, useEffect} from 'react';
+import './ItemCount.css';
+import {Link} from 'react-router-dom';
 
 
-class ItemCount extends React.Component {
-constructor() {
-      super()
-      this.state = {
-        contador : 0
+export default function ItemCount(props){
+
+  const [count, setCount] = useState(0)
+  const [showing] = useState(false);
+  
+  useEffect(()=>{
+    if(count < 0){
+      setCount(0)
+    }else{
+      if(count > 10){
+        setCount(10)
       }
     }
-sumar() {
-    this.setState((State) => {
-      return {
-        contador: State.contador + 1
-      }
-    })
-  }
- restar() {
-   if (this.state.contador > 0 ) {
-    this.setState((State) => {
-      return {
-        contador: State.contador - 1
-      }
-    })
-   }
-  }
-render() {      
-    return (
-        <div id='counter'>
-            <div>{this.state.contador}</div>
-            <button onClick={() => this.sumar()}>+</button>
-            <button onClick={() => this.restar()}>-</button>
+  },[count]) 
+  
+    return(
+      <>
+        <div id="counter">
+        <input type="button" value="+"className="button" onClick={()=>setCount(count+1)}/>
+        {count}
+        <input type="button" value="-" className="button" onClick={()=>setCount(count-1)}/> <br></br>  
         </div>
-      )
+        <div>
+        { showing
+        ? <button id="carrito" onClick={onAdd}>Agregar al carrito</button>  
+        : <Link to="/carrito">
+            <button id="irAlCarrito"><p>Terminar compra</p></button>
+          </Link>
+        }
+        </div>
+      </>
+    )
+  }
+  
+  
+  function onAdd(){
+
+    
+ 
     }
-}
 
-export default ItemCount;
-
-
+      

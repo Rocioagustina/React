@@ -8,6 +8,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Productos from './components/Productos/Productos';
 import CartContainer from './components/CartContainer/CartContainer'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import CartContext, { CartContextProvider } from './components/CartContext/CartContext';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
     <>
       <Navbar />
     </>
+    <CartContextProvider>
     <Switch>
       <Route exact path="/">
       <Home />
@@ -33,6 +35,7 @@ function App() {
       <CartContainer />
       </Route>
     </Switch>
+    </CartContextProvider>
     </div>
     </BrowserRouter>
   );

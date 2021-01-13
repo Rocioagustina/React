@@ -1,4 +1,4 @@
-button {
+.button {
     background-color: transparent;
     margin: 15px;
     border: 2px solid #42a2c2;
@@ -7,7 +7,22 @@ button {
     height: 25px;
 }
 
+button {
+    background-color: transparent;
+    margin: 15px;
+    border: 2px solid #42a2c2;
+    border-radius: 6px;
+}
+
 h2 {
     color: teal;
 }
 
+#irAlCarrito {
+    background-color: transparent;
+    margin: 15px;
+    border: 2px solid #42a2c2;
+    border-radius: 6px;
+    height: 35px;
+    
+}

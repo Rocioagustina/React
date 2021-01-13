@@ -2,11 +2,11 @@ import React, {useState, useEffect} from 'react';
 import products  from '../Item/Item';
 import ItemCount from '../ItemCount/ItemCount';
 import {Link} from 'react-router-dom';
-
+import ProductContext from '../CartContext/ProductContext'
 
 
 function ItemList(){
-    const [producto, setItem] = useState([]);
+    const [producto, setItem] = useContext(ProductContext);
 
 
 useEffect(() => {

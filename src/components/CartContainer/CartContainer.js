@@ -5,7 +5,6 @@ function CartContainer() {
     return(
         <>
         <div>
-            <p>Cart Container</p>
             <ItemDetail />
         </div>
         </>
