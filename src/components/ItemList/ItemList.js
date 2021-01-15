@@ -11,7 +11,7 @@ function ItemList(){
 
 useEffect(() => {
     setTimeout(() => {
-        const promise = new Promise((resolve, reject) => {
+        const promise = new Promise((resolve) => {
             resolve(products);
         });
         promise.then(products => {
